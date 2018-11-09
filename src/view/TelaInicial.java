@@ -52,6 +52,11 @@ public class TelaInicial extends javax.swing.JFrame {
 
         btnGeometria.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnGeometria.setText("Geometria Plana");
+        btnGeometria.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGeometriaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -103,6 +108,12 @@ public class TelaInicial extends javax.swing.JFrame {
                 
         
     }//GEN-LAST:event_btnAritmeticaActionPerformed
+
+    private void btnGeometriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGeometriaActionPerformed
+        TelaGeometria tela = new TelaGeometria();
+        tela.setTitle("Aritmética");
+        tela.setVisible(true);
+    }//GEN-LAST:event_btnGeometriaActionPerformed
 
     /**
      * @param args the command line arguments
